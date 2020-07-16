@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Importe bruto</title>
+        <link rel="stylesheet" type="text/css" href="../css/importe.css">
+        <script type="text/javascript">
+        var bruto;
+        var neto;
+        var por;
+
+
+        bruto=prompt("Cual es el importe bruto: ");
+        
+        if(bruto>150000)
+        {
+            alert("Se aplica 16% de impuesto");
+            
+            por=(bruto/100)*16;
+            neto=bruto-por;
+
+            alert("El importe neto es de: "+neto);
+        }
+        else
+        {
+            alert("Se aplica 10% de impuesto");
+
+            por=(bruto/100)*10;
+            neto=bruto-por;
+
+            alert("El importe neto es de: "+neto);
+        }
+        </script>
+    </head>
+    
+    <body>
+        <div id="barras">
+        <nav>
+            <ul class="nav">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="losarticles.html">Articles</a></li>
+                <li><a href="votos.html">Votaciones</a></li>
+                <li><a href="sumas.html">Sumas de numeros</a></li>
+
+                <li><a href="">If-Else y Case</a>
+                    <ul>
+                        <li><a href="ordenados.html">Mayor a menor</a></li>
+                        <li><a href="pago.html">Sueldo</a></li>
+                    </ul>   
+                </li>
+
+                <li><a href="">While y For</a>
+                    <ul>
+                        <li><a href="numeros_impares.html">Numeros del 1 al 99</a></li>
+                        <li><a href="losasteriscos.html">Asteriscos</a></li>
+                        <li><a href="tablitas.html">Tablas de multiplicar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </body>
+</html>
